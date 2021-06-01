@@ -1,0 +1,91 @@
+{
+
+"command_1" : 
+{
+"command_names" : ["help", "h"], 
+"function_name" : "help_", 
+"command_parameters" : ["command"], 
+"command_description" : "выводит в консоль справку о назначении и синтаксисе всех поддерживаемых команд", 
+"command_parameters_descriptions" : ["команда, по которой необходимо получить справку"]
+},
+
+"command_2" : 
+{
+"command_names" : ["load", "ld"], 
+"function_name" : "load", 
+"command_parameters" : ["file_name", "image_name"], 
+"command_description" : "загружает изображение из файла в память программы под заданным именем", 
+"command_parameters_descriptions" : 
+[
+"имя файла с изображением для загрузки в память программы (в текущем каталоге)", 
+"имя изображения в памяти, по которому оно доступно в других командах"
+]
+}, 
+
+"command_3" : 
+{
+"command_names" : ["resize"], 
+"function_name" : "resize_", 
+"command_parameters" : ["input_name", "output_name", "new_width", "new_height"], 
+"command_description" : "создаёт новое изображение с изменёнными размерами в сравнении с исходным", 
+"command_parameters_descriptions" : 
+[
+"имя исходного изображения", "имя преобразованного изображения", 
+"ширина нового изображения (в пикселах)", "высота нового изображения (в пикселах)"
+]
+}, 
+
+"command_4" : 
+{
+"command_names" : ["blur"], 
+"function_name" : "blur_", 
+"command_parameters" : ["input_name", "output_name", "size"], 
+"command_description" : "создаёт новое изображение, сглаженное в сравнении с исходным", 
+"command_parameters_descriptions" : 
+[
+"имя исходного изображения", "имя сглаженного изображения", 
+"величина стороны квадратной области сглаживания (в пикселах)"
+]
+}, 
+
+"command_5" : 
+{
+"command_names" : ["undo"], 
+"function_name" : "undo", 
+"command_parameters" : [], 
+"command_description" : "откатывает назад последнее действие для загрузки изображения, изменения размеров, сглаживания", 
+"command_parameters_descriptions" : []
+}, 
+
+"command_6" : 
+{
+"command_names" : ["state"], 
+"function_name" : "state", 
+"command_parameters" : [], 
+"command_description" : "выводит информацию о текущем состоянии памяти (имена в памяти программы, пути до соответствующих файлов, и размеры изображений)", 
+"command_parameters_descriptions" : [] 
+}, 
+
+"command_7" : 
+{
+"command_names" : ["save", "s"], 
+"function_name" : "save", 
+"command_parameters" : ["image_name", "file_name"], 
+"command_description" : "записывает изображение в файл", 
+"command_parameters_descriptions" : 
+[
+"имя изображения (в памяти программы)", 
+"имя файла, который нужно создать (или перезаписать)"
+]
+}, 
+
+"command_8" : 
+{
+"command_names" : ["exit", "quit", "q"], 
+"function_name" : "exit_", 
+"command_parameters" : [], 
+"command_description" : "осуществляет выход из программы", 
+"command_parameters_descriptions" : []
+}
+
+}
